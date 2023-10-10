@@ -8,35 +8,31 @@
 </div>
 <div class="row">
   <div class="panel panel-default">
+    <div class="panel-heading">
+      Kitchen Sink
+    </div>
     <!-- /.panel-heading -->
     <div class="panel-body">
       <div class="table-responsive">
         <table class="table table-striped table-bordered table-hover">
           <thead>
             <tr>
-              <th>NO</th>
-              <th>Nama</th>
-              <th>Alamat</th>
-              <th>Kontak</th>
-              <th>Email</th>
-              <th>Website</th>
-              <th>Catatan</th>
+              <th>No</th>
+              <th>Nama Barang</th>
+              <th>Unit</th>
+              <th>Harga</th>
               <th><i class="fa fa-cog" aria-hidden="true"></i></th>
             </tr>
           </thead>
           <tbody>
-            <?php foreach ($perusahaan as $key => $item) : ?>
+            <?php foreach ($Barang as $key => $item) : ?>
               <tr>
                 <td>
                   <?= $key + 1 ?></td>
-                <td><?= $item->nama ?></td>
-                <td><?= $item->alamat ?></td>
-                <td><?= $item->kontak ?></td>
-                <td><?= $item->email ?></td>
-                <td><?= $item->website ?></td>
-                <td><?= $item->catatan ?></td>
-                <td>
-                  <a href="" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                <td><?= $item->Namabarang ?></td>
+                <td><?= $item->unit ?></td>
+                <td><?= $item->Harga ?></td>
+                <a href="" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                 </td>
               </tr>
             <?php endforeach ?>
