@@ -13,8 +13,24 @@
       <table class="table table-bordered">
         <tr>
             <th>no</th>
+            <th>nama</th>
+            <th>alamat</th>
+            <th>kontak</th>
+            <th>email</th>
+            <th>website</th>
+            <th>catatan</th>
         </tr>
         <?php foreach ($perusahaan as $key=>$item):?>
+          <tr>
+            <td><<?= $key+1 ?></td>
+            <td><?= $item->nama ?></td>            
+            <td><?= $item->alamat ?></td>            
+            <td><?= $item->kontak ?></td>            
+            <td><?= $item->email ?></td>            
+            <td><?= $item->website ?></td>            
+            <td><?= $item->catatan ?></td>            
+        </tr>
+          <?php endforeach?> 
       </table>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

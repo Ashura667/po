@@ -8,13 +8,13 @@ class PerusahaanModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'perusahaan';
-    protected $primaryKey       = 'perusahaan_id';
+    protected $primaryKey       = 'id';
     protected $useAutoIncrement = false;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = 
-    ['nama_perusahaan','alamat_perusahaan','nomor_telepon_perusahaan',
-        'email_perusahaan','website_perusahaan','catatan'];
+    ['nama','alamat','kontak',
+        'email','website','catatan'];
 
 }

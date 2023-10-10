@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\PerusahaanModel;
-class Perusahaan extends BaseController
+class perusahaan extends BaseController
 {
 
     protected $perusahaan;
@@ -15,6 +15,8 @@ class Perusahaan extends BaseController
     public function index()
     {
         $data ['perusahaan'] = $this->perusahaan->findAll();
+        // dd($data);
+        return view('perusahaan', $data);
         
     } 
      public function tambah()
