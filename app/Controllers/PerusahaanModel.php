@@ -15,6 +15,7 @@ class Perusahaan extends BaseController
     public function index()
     {
         $data ['perusahaan'] = $this->perusahaan->findAll();
+        
     } 
      public function tambah()
     {
