@@ -6,6 +6,7 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('layout');
+        $data ['title'] = "Beranda";
+        return view('home', $data);
     }
 }
