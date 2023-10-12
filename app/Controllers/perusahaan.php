@@ -14,8 +14,12 @@ class Perusahaan extends BaseController
     }
     public function index()
     {
-        $data ['perusahaan'] = $this->perusahaan->findAll();
-        $data ['title'] = "Perusahaan";
+        // $data ['perusahaan'] = $this->perusahaan->findAll();
+        // $data ['title'] = "Perusahaan";
+        $data = [
+            'perusahaan' => $this->perusahaan->findAll(),
+            'title' => "Perusahaan"
+        ];
         // dd($data);
         return view('perusahaan', $data);
         
