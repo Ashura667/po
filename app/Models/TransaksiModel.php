@@ -8,9 +8,9 @@ class TransaksiModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'transaksi';
-    protected $primaryKey       = 'nomor po';
+    protected $primaryKey       = 'iddetailtransaksi';
     protected $useAutoIncrement = false;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = ['sub total','ppn10%','total','disetujui oleh'];

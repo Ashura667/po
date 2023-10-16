@@ -9,7 +9,7 @@
 <div class="row">
   <div class="panel panel-default">
     <div class="panel-heading">
-      Kitchen Sink
+      Data vendor
     </div>
     <!-- /.panel-heading -->
     <div class="panel-body">
@@ -26,7 +26,7 @@
             </tr>
           </thead>
           <tbody>
-            <?php foreach ($Vendor as $key => $item) : ?>
+            <?php foreach ($vendor as $key => $item) : ?>
               <tr>
                 <td>
                   <?= $key + 1 ?></td>

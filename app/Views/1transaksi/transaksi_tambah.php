@@ -20,7 +20,7 @@
       <div class="card-body">
         <form action="">
           <div class="form-group">
-            <label for="">transaksi</label>
+            <label for="">Transaksi</label>
             <input type="text" class="form-control" name="transaksi" placeholder="masukkan transaksi">
           </div>
           <div class="card-footer">

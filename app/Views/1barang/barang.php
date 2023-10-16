@@ -25,7 +25,7 @@
             </tr>
           </thead>
           <tbody>
-            <?php foreach ($Barang as $key => $item) : ?>
+            <?php foreach ($barang as $key => $item) : ?>
               <tr>
                 <td>
                   <?= $key + 1 ?></td>

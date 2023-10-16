@@ -24,7 +24,7 @@
             </tr>
           </thead>
           <tbody>
-            <?php foreach ($Detailtransaksi as $key => $item) : ?>
+            <?php foreach ($detailtransaksi as $key => $item) : ?>
               <tr>
                 <td>
                   <?= $key + 1 ?></td>
