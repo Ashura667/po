@@ -21,7 +21,7 @@ class Perusahaan extends BaseController
             'title' => "Perusahaan"
         ];
         // dd($data);
-        return view('perusahaan', $data);
+        return view('1perusahaan/perusahaan', $data);
         
     } 
      public function tambah()

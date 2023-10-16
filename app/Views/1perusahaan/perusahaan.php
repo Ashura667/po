@@ -29,12 +29,12 @@
               <tr>
                 <td>
                   <?= $key + 1 ?></td>
-                <td><?= $item->nama ?></td>
-                <td><?= $item->alamat ?></td>
-                <td><?= $item->kontak ?></td>
-                <td><?= $item->email ?></td>
-                <td><?= $item->website ?></td>
-                <td><?= $item->catatan ?></td>
+                <td><?= $item->Nama ?></td>
+                <td><?= $item->Alamat ?></td>
+                <td><?= $item->Kontak ?></td>
+                <td><?= $item->Email ?></td>
+                <td><?= $item->Website ?></td>
+                <td><?= $item->Catatan ?></td>
                 <td>
                   <a href="" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                 </td>
