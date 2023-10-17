@@ -21,12 +21,12 @@ class Transaksi extends BaseController
             'title' => "Transaksi"
         ];
         // dd($data);
-        return view('1transaksi/transaksi', $data);
+        return view('transaksi/transaksi', $data);
         
     } 
      public function tambah()
     {
-        //
+        return view('transaksi/transaksi_tambah');
     }
     public function ubah()
     {

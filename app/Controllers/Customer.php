@@ -17,13 +17,22 @@ public function index()
         'title' => "Customer"
     ];
     // dd($data);
-    return view('1customer/customer', $data);
+    return view('customer/customer', $data);
     
 }
 public function tambah()
-{
-    //
-} public function ubah()
+    {
+        $item = $this->request->getPost();
+        if(count($item)>0){
+            try {
+                $this->customer->insert($item);
+                return redirect()->to(base_url('customer'));
+            } catch (\Throwable $th) {
+                //throw $th;
+            }
+
+        }else return view('customer/tambah');
+    }  public function ubah()
 {
     //
 } public function hapus()

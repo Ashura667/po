@@ -6,7 +6,7 @@
         <div class="card-header">
           <div class="d-flex justify-content-between">
             <h4>Daftar customer</h4>
-            <a href="<?= base_url('customer/customer_tambah') ?>" class="btn btn-primary btn-sm"><i class="fa fa-plus" aria-hidden="true"></i> Tambah</a>
+            <a href="<?= base_url('customer/tambah') ?>" class="btn btn-primary btn-sm"><i class="fa fa-plus" aria-hidden="true"></i> Tambah</a>
           </div>
         </div>
         <div class="card-body">
@@ -27,11 +27,12 @@
               <tr>
                 <td>
                   <?= $key + 1 ?></td>
-                <td><?= $item->Nama?></td>
-                <td><?= $item->Alamat?></td>
-                <td><?= $item->Kontak?></td>
-                <td><?= $item->Email?></td>
-                <a href="" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                <td><?= $item->nama?></td>
+                <td><?= $item->alamat?></td>
+                <td><?= $item->kontak?></td>
+                <td><?= $item->email?></td>
+                <td>
+                <a href="" class="btn btn-warning"><i class="fa fa-edit" aria-hidden="true"></i></a>
                 </td>
               </tr>
             <?php endforeach ?>

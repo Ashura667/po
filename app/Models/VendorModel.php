@@ -13,6 +13,6 @@ class VendorModel extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['Nama','Alamat','Kontak','Email'];
+    protected $allowedFields    = ['nama','alamat','kontak','email'];
 
 }

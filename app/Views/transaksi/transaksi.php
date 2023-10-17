@@ -6,7 +6,7 @@
         <div class="card-header">
           <div class="d-flex justify-content-between">
             <h4>Daftar Transaksi</h4>
-            <a href="<?= base_url('vendor/transaksi_tambah') ?>" class="btn btn-primary btn-sm"><i class="fa fa-plus" aria-hidden="true"></i> Tambah</a>
+            <a href="<?= base_url('tambah_transaksi') ?>" class="btn btn-primary btn-sm"><i class="fa fa-plus" aria-hidden="true"></i> Tambah</a>
           </div>
         </div>
         <div class="card-body">

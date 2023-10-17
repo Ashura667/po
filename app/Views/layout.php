@@ -88,7 +88,7 @@
             <!-- Brand Logo -->
             <a href="index3.html" class="brand-link">
                 <img src="<?= base_url()?>assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">Admin Slot</span>
+                <span class="brand-text font-weight-light">tukang tahu</span>
             </a>
 
             <!-- Sidebar -->
@@ -99,7 +99,7 @@
                         <img src="<?= base_url()?>assets/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Fajar Ladusing</a>
+                        <a href="#" class="d-block">Fajar bunbun</a>
                     </div>
                 </div>
 

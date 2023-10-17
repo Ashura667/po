@@ -19,13 +19,23 @@ class Barang extends BaseController
             'title' => "Barang"
         ];
         // dd($data);
-        return view('1barang/barang', $data);
+        return view('barang/barang', $data);
         
     }
     public function tambah()
     {
-        //
-    } public function ubah()
+        $item = $this->request->getPost();
+        if(count($item)>0){
+            try {
+                $this->barang->insert($item);
+                return redirect()->to(base_url('barang'));
+            } catch (\Throwable $th) {
+                //throw $th;
+            }
+
+        }else return view('barang/tambah');
+    } 
+    public function ubah()
     {
         //
     } public function hapus()
