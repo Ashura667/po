@@ -32,10 +32,30 @@ public function tambah()
             }
 
         }else return view('customer/tambah');
-    }  public function ubah()
-{
-    //
-} public function hapus()
+    }  public function ubah($id=null)
+    {
+        $item = $this->request->getPost();
+        if (isset($item['ubah'])) {
+            $item = $this->request->getPost();
+            if (count($item) > 0) {
+                try {
+                    $value = [
+                        "nama"=>$item['nama'],
+                        "alamat"=>$item['alamat'],
+                        "kontak"=>$item['kontak'],
+                        "email"=>$item['email'],
+                    ];
+                    $this->customer->update($id,$value);
+                    return redirect()->to(base_url('customer'));
+                } catch (\Throwable $th) {
+                    //throw $th;
+                }
+            }
+        }else{
+            $item['item'] = $this->customer->where('idcustomer', $id)->first();
+            return view('customer/ubah', $item);
+        } 
+    } public function hapus()
 {
     //
 }

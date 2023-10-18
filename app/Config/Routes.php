@@ -26,6 +26,12 @@ $routes->group('vendor', function($routes){
     $routes->add('ubah/(:any)', 'Vendor::ubah/$1');
     $routes->get('hapus/(:any)', 'Vendor::hapus/$1');
 });
+$routes->group('transaksi', function($routes){
+    $routes->get('/', 'Transaksi::index');
+    $routes->add('tambah', '::tambah');
+    $routes->add('ubah/(:any)', 'Vendor::ubah/$1');
+    $routes->get('hapus/(:any)', 'Vendor::hapus/$1');
+});
 $routes->get('/transaksi', 'transaksi::index');
 
 $routes->add('/tambah_transaksi', 'Transaksi::tambah');
