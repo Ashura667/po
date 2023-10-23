@@ -28,7 +28,7 @@ class Vendor extends BaseController
     public function tambah()
     {
         $item = $this->request->getPost();
-        if (count($item) > 0) {
+        if (count(   $item) > 0) {
             try {
                 $this->vendor->insert($item);
                 return redirect()->to(base_url('vendor'));
@@ -36,7 +36,7 @@ class Vendor extends BaseController
                 //throw $th;
             }
         } else return view('vendor/tambah');
-    }
+    }      
     public function ubah($id=null)
     {
         $item = $this->request->getPost();
@@ -61,8 +61,9 @@ class Vendor extends BaseController
             return view('vendor/ubah', $item);
         } 
     }
-    public function hapus()
+    public function hapus($id)
     {
-        //
+        $this->vendor->delete($id);
+        return redirect()->to(base_url("vendor"));
     }
 }
