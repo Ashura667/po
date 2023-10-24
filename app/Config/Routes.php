@@ -11,13 +11,13 @@ $routes->get('/perusahaan', 'Perusahaan::index');
 $routes->group('barang', function($routes){
     $routes->get('/', 'Barang::index');
     $routes->add('tambah', 'Barang::tambah');
-    $routes->add('ubah', 'Barang::ubah');
+    $routes->add('ubah/(:any)', 'Barang::ubah/$1');
     $routes->get('hapus/(:any)', 'Barang::hapus/$1');
 });
 $routes->group('customer', function($routes){
     $routes->get('/', 'Customer::index');
     $routes->add('tambah', 'Customer::tambah');
-    $routes->add('ubah', 'Customer::ubah');
+    $routes->add('ubah/(:any)', 'Customer::ubah/$1');
     $routes->get('hapus/(:any)', 'Customer::hapus/$1');
 });
 $routes->group('vendor', function($routes){

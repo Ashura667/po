@@ -54,9 +54,10 @@ public function tambah()
         }else{
             $item['item'] = $this->customer->where('idcustomer', $id)->first();
             return view('customer/ubah', $item);
-        } 
-    } public function hapus()
-{
-    //
-}
+        } }
+        public function hapus($id)
+        {
+            $this->customer->delete($id);
+            return redirect()->to(base_url("customer"));
+        }
 }

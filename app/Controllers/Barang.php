@@ -35,11 +35,33 @@ class Barang extends BaseController
 
         }else return view('barang/tambah');
     } 
-    public function ubah()
+    public function ubah($id=null)
     {
-        //
-    } public function hapus()
-    {
-        //
+        $item = $this->request->getPost();
+        if (isset($item['ubah'])) {
+            $item = $this->request->getPost();
+            if (count($item) > 0) {
+                try {
+                    $value = [
+                        "nama"=>$item['nama'],
+                        "unit"=>$item['unit'],
+                        "harga"=>$item['harga'],
+                    ];
+                    $this->barang->update($id,$value);
+                    return redirect()->to(base_url('barang'));
+                } catch (\Throwable $th) {
+                    //throw $th;
+                }
+            }
+        }else{
+            $item['item'] = $this->barang->where('idbarang', $id)->first();
+            return view('barang/ubah', $item);
+        } 
     }
+        public function hapus($id)
+        {
+            $this->barang->delete($id);
+            return redirect()->to(base_url("barang"));
+        }
 }
+ 

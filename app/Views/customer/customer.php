@@ -32,7 +32,8 @@
                 <td><?= $item->kontak?></td>
                 <td><?= $item->email?></td>
                 <td>
-                <a href="<?= base_url('costumer/ubah')?>" class="btn btn-warning"><i class="fa fa-edit" aria-hidden="true"></i></a>
+                <a href="<?= base_url('customer/ubah').'/'.$item->idcustomer?>" class="btn btn-warning btn-sm"><i class="fas fa-edit" aria-hidden="true"></i></a>
+                <a href="<?= base_url('customer/hapus').'/'.$item->idcustomer?>" class="btn btn-danger btn-sm"><i class="fas fa-trash" aria-hidden="true"></i></a>
                 </td>
               </tr>
             <?php endforeach ?>
