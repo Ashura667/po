@@ -24,10 +24,19 @@ class Transaksi extends BaseController
         return view('transaksi/transaksi', $data);
         
     } 
-     public function tambah()
+    public function tambah()
     {
-        return view('transaksi/transaksi_tambah');
-    }
+        $item = $this->request->getPost();
+        if(count($item)>0){
+            try {
+                $this->transaksi->insert($item);
+                return redirect()->to(base_url('transaksi'));
+            } catch (\Throwable $th) {
+                //throw $th;
+            }
+
+        }else return view('transaksi/tambah');
+    } 
     public function ubah()
     {
         //
