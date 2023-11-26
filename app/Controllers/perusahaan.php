@@ -21,19 +21,7 @@ class Perusahaan extends BaseController
             'title' => "Perusahaan"
         ];
         // dd($data);
-        return view('1perusahaan/perusahaan', $data);
+        return view('perusahaan/perusahaan', $data);
         
     } 
-     public function tambah()
-    {
-        //
     }
-    public function ubah()
-    {
-        //
-    }
-    public function hapus()
-    {
-        //
-    }
-}

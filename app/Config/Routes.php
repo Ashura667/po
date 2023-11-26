@@ -8,6 +8,8 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/perusahaan', 'Perusahaan::index');
 
+
+
 $routes->group('barang', function($routes){
     $routes->get('/', 'Barang::index');
     $routes->add('tambah', 'Barang::tambah');

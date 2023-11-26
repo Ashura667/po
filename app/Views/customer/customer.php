@@ -9,7 +9,7 @@
             <a href="<?= base_url('customer/tambah') ?>" class="btn btn-primary btn-sm"><i class="fa fa-plus" aria-hidden="true"></i> Tambah</a>
           </div>
         </div>
-       
+        <div class="card-body">
           <div class="table-responsive">
             <table class="table table-striped table-bordered table-hover">
           <thead>
