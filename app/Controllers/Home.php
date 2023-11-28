@@ -4,9 +4,12 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
-    public function index(): string
+    public function index()
     {
-        $data ['title'] = "Beranda";
-        return view('home', $data);
+        if(is_null(session()->get("isLogin"))){
+            return redirect()->to(base_url('authentication'));
+        }
+        return view('home');
     }
+
 }

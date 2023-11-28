@@ -8,7 +8,11 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/perusahaan', 'Perusahaan::index');
 
-
+$routes->group('authentication', function($routes){
+    $routes->get('/', 'Auth::index');
+    $routes->add('login', 'Auth::login');
+    $routes->get('logout', 'Auth::logout');
+});
 
 $routes->group('barang', function($routes){
     $routes->get('/', 'Barang::index');
