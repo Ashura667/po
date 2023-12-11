@@ -9,7 +9,7 @@ class Home extends BaseController
         if(is_null(session()->get("isLogin"))){
             return redirect()->to(base_url('authentication'));
         }
-        return view('home');
+        return view('layout');
     }
 
 }

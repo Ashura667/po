@@ -2,23 +2,7 @@
     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-        <li class="nav-item">
-            
-                <i class="nav-icon fas fa-home"></i>
-                <p>
-                 
-                </p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="<?= base_url('perusahaan')?>" class="nav-link">
-                <i class="nav-icon fas fa-torii-gate"></i>
-                <p>
-                    Perusahaan
-                </p>
-            </a>
-        </li>
-        <li class="nav-item">
+            <li class="nav-item">
             <a href="<?= base_url('vendor')?>" class="nav-link">
                 <i class="nav-icon fas fa-torii-gate"></i>
                 <p>
@@ -36,7 +20,7 @@
         </li>
         <li class="nav-item">
             <a href="<?= base_url('barang')?>" class="nav-link">
-                <i class="nav-icon fas fa-building"></i>
+            <i class="fas fa-shopping-bag"></i>
                 <p>
                     Barang
                 </p>
@@ -44,9 +28,17 @@
         </li>
         <li class="nav-item">
             <a href="<?= base_url('transaksi')?>" class="nav-link">
-                <i class="nav-icon fas fa-building"></i>
+            <i class="fas fa-truck"></i>
                 <p>
                     Transaksi
+                </p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="<?= base_url('authentication/logout')?>" class="nav-link">
+            <i class="fas fa-sign-out-alt"></i>
+                <p>
+                    logout
                 </p>
             </a>
         </li>
